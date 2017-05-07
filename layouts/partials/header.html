@@ -21,7 +21,7 @@
 <nav class="site-nav">
     <ul id="menu" class="menu">
       {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
+      {{ range .Site.Menus.Main }}
         <li class="menu-item {{ if $currentPage.IsMenuCurrent "main" . }}menu-item-active{{ end }}">
           <a href="{{ .URL }}" rel="section">
               <i class="menu-item-icon fa fa-fw fa-{{ .Pre }}"></i> <br />{{ .Name }}
@@ -30,4 +30,3 @@
       {{ end }}
     </ul>
 </nav>
-
